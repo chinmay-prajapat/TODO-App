@@ -1,0 +1,39 @@
+body {
+    background: seagreen;
+    /* width: 100vh; */
+    justify-content: center;
+
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+
+
+/* .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: large;
+    background-color: white;
+
+} */
+
+.header {
+    margin: 200px auto;
+    padding: 30px;
+    font-size: large;
+    background-color: white;
+
+}
+
+
+
+hr {
+    max-width: 400px;
+}
+
+.strike {
+    color: red;
+}
