@@ -1,5 +1,5 @@
 import React from "react";
-import FinishedTask from "./FinishedTask";
+
 const Task = ({ task, checkedTask }) => {
   const done = [];
   const onInputChange = (e) => {

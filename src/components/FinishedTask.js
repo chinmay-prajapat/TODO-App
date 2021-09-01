@@ -2,9 +2,9 @@ import React from "react";
 import "../style.css";
 const FinishedTask = ({ task }) => {
   console.log(task);
-  const renderedList = task.map((task) => {
+  const renderedList = task.map((task, i) => {
     return (
-      <div>
+      <div key={i}>
         <strike className="strike">{task}</strike>
       </div>
     );
