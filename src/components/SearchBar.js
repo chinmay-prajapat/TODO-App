@@ -1,26 +1,29 @@
 import React from "react";
+import "../style.css";
 class SearchBar extends React.Component {
   state = { term: null };
   onChangeHandle = (e) => {
-    // e.preventDefault();
     this.setState({ term: e.target.value });
-    // console.log(e);
   };
   onSubmitHandle = (e) => {
     e.preventDefault();
     this.props.onSubmit(this.state.term);
+    e.target.reset();
   };
-  resetValue = () => {};
+
   render() {
     return (
-      <div className="ui segment">
-        <form className="ui form" onSubmit={this.onSubmitHandle}>
-          <input
-            className="ui search"
-            type="text"
-            onChange={this.onChangeHandle}
-          />
-        </form>
+      <div className="searchBar">
+        <div className="ui segment ">
+          <form className="ui form" onSubmit={this.onSubmitHandle}>
+            <input
+              className="search"
+              type="text"
+              onChange={this.onChangeHandle}
+              id="input"
+            />
+          </form>
+        </div>
       </div>
     );
   }

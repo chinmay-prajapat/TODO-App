@@ -8,6 +8,9 @@ body {
     padding: 10px;
 }
 
+hr {
+    max-width: 300px;
+}
 
 
 
@@ -19,19 +22,52 @@ body {
     background-color: white;
 
 } */
+.app-hr {
+    max-width: 400px;
+}
 
 .header {
     margin: 200px auto;
     padding: 30px;
     font-size: large;
     background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 
 }
 
+.searchBar {
+    box-shadow: rgba(70, 230, 7, 0.35) 0px 5px 15px;
 
+    border-radius: 5px;
+}
 
-hr {
-    max-width: 400px;
+.tasks {
+    overflow: auto;
+    max-height: 100px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.finish {
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.task-items {
+    padding: 10px;
+}
+
+.tasks::-webkit-scrollbar {
+    display: none;
+}
+
+.form {
+    background: rgb(53, 221, 109);
+
+    padding: 1px;
 }
 
 .strike {
